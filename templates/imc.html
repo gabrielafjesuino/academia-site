@@ -1,0 +1,27 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento -->
+<html lang = "en"> <!-- Declaração do idioma da página (inglês) -->
+<head>
+    <meta charset = "UTF-8"> <!-- Declaração da codificação de caracteres -->
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0"> <!-- Declaração da viewport para dispositivos móveis -->
+    <link rel = "stylesheet" href = "static/stylo.css">
+    <title>Calculadora IMC</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+<body>
+    <h1>CALCULADORA IMC</h1> <!-- Título principal da página -->
+    <form action = "/verificar" method = "post" class = "base"> <!-- Formulário para enviar o número para verificação -->
+        <label for = "altura">DIGITE SUA ALTURA:</label> <!-- Rótulo do campo de entrada -->
+        <input type = "number" id = "altura" name = "altura" step = "0.01" required> <!-- Campo de entrada para o número -->
+        <label for = "peso" class = "espaco">DIGITE SEU PESO:</label> <!-- Rótulo do campo de entrada -->
+        <input type = "number" id = "peso" name = "peso" step = "0.01" required> <!-- Campo de entrada para o número -->
+        <br> <br>
+        <button type = "submit" class = "botao">CALCULAR</button> <!-- Botão de envio do formulário -->
+    </form>
+    <br> <br>
+    <div id = "resultado_python" class = "resultado">
+        {% if resultado_python %} <!-- Verifica se há um resultado a ser exibido -->
+            <p> {{ resultado_python }} </p> <!-- Exibe o resultado da verificação -->
+            <p> {{ resultado }} </p><!-- Exibe o resultado da verificação -->
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    background-color: #ffce05;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.base {
+    background-color: black;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.espaco {
+    padding-left: 20px;
+}
+
+.botao {
+    background-color: #af2222;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.resultado {
+    background-color: #ffce05;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 430px;
+    margin-right: 430px;
+    border: 5px solid black;
+}
